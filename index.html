@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>For Ezu ♡</title>
+<style>
+:root{--ink:#30252b;--pink:#ffabc8;--cream:#fff9ec;--paper:#fffdf5;--dark:#17131a}
+*{box-sizing:border-box}html{scroll-behavior:smooth}
+body{margin:0;color:var(--ink);font-family:"Trebuchet MS",system-ui,sans-serif;background:#f8eee5;overflow-x:hidden}
+section{min-height:100vh;padding:70px 18px;display:flex;align-items:center;justify-content:center;position:relative}
+.wrap{width:min(920px,100%);text-align:center}
+h1,h2{font-family:Georgia,serif;font-weight:700}h1{font-size:clamp(3.8rem,16vw,8rem);line-height:.82;margin:20px 0;color:#fff}
+h2{font-size:clamp(2.1rem,8vw,4.2rem);margin:10px 0}
+p{font-size:1.05rem;line-height:1.7}.tiny{font-size:.85rem;opacity:.65}
+.btn{display:inline-block;border:0;background:var(--ink);color:white;padding:15px 24px;border-radius:999px;text-decoration:none;font-weight:700;cursor:pointer;box-shadow:0 10px 24px #0002}
+.btn:hover{transform:translateY(-2px)}
+#intro{background:radial-gradient(circle at 75% 20%,#ffd6e6,transparent 35%),linear-gradient(145deg,#241d25,#59434c);color:white;overflow:hidden}
+#intro:before{content:"";position:absolute;width:280px;height:280px;border:2px solid #ffffff33;border-radius:50%;top:-80px;left:-80px}
+.note{max-width:560px;margin:0 auto 30px}.note strong{color:#ffd1e2}
+.sticker{display:inline-block;background:#ffd3e2;color:#39252e;padding:8px 18px;transform:rotate(-3deg);font-weight:800}
+.paper{background:var(--paper);padding:34px 25px;border-radius:12px;box-shadow:0 20px 55px #5d38461f;position:relative}
+.paper:before{content:"";position:absolute;top:10px;left:50%;width:85px;height:25px;background:#ffe3a8aa;transform:translateX(-50%) rotate(-2deg)}
+#birthday{background:var(--cream)}
+.confetti{position:fixed;inset:0;pointer-events:none;z-index:20}
+.confetti span{position:absolute;top:-20px;width:9px;height:14px;border-radius:3px;animation:fall 4.5s linear forwards}
+@keyframes fall{to{transform:translateY(110vh) rotate(720deg);opacity:0}}
+.reveal{opacity:0;transform:translateY(25px);transition:1s}.reveal.on{opacity:1;transform:none}
+.memories{display:grid;grid-template-columns:1fr 1fr;gap:25px;margin:30px auto;max-width:850px}
+@media(max-width:680px){.memories{grid-template-columns:1fr}}
+.polaroid{background:white;padding:12px 12px 28px;box-shadow:0 15px 35px #0000001c;transform:rotate(-2deg)}
+.polaroid:nth-child(2){transform:rotate(2deg)}
+.polaroid img{width:100%;display:block;aspect-ratio:4/5;object-fit:cover}
+.caption{font-family:"Comic Sans MS","Trebuchet MS",sans-serif;font-weight:700;margin-top:12px}
+.award{display:inline-block;background:#ffe3a8;padding:12px 17px;margin:7px;border-radius:16px;transform:rotate(-2deg);font-weight:800}
+.quiz{max-width:620px;margin:25px auto}.answer{display:block;width:100%;margin:10px 0;padding:15px;border:2px solid #ead4dc;border-radius:16px;background:white;font-size:1rem;cursor:pointer;color:var(--ink)}
+.answer:hover{background:#fff0f6}.result{display:none;margin-top:18px;padding:18px;background:#ffdce9;border-radius:18px;font-weight:700}
+.letter{max-width:700px;margin:25px auto;text-align:left;line-height:1.85}
+.type{white-space:pre-line}
+.cinema{background:var(--dark);color:white}
+.video-card{max-width:650px;margin:auto;padding:28px;border-radius:28px;background:#252027;box-shadow:0 25px 60px #0006}
+.screen{position:relative;border-radius:20px;overflow:hidden}
+.screen img{width:100%;display:block;filter:brightness(.78)}
+.play{position:absolute;inset:0;display:grid;place-items:center;font-size:4rem}
+#slideshow{transition:opacity .35s}
+.final{background:linear-gradient(145deg,#ffe0eb,#fff6d9)}
+.heart{font-size:3rem;animation:pulse 1.2s infinite}@keyframes pulse{50%{transform:scale(1.18)}}
+</style>
+</head>
+<body>
+<div class="confetti" id="confetti"></div>
+
+<section id="intro">
+<div class="wrap">
+<div class="sticker">A VERY IMPORTANT MESSAGE 👀</div>
+<h1>Ezu.</h1>
+<div class="note">
+<p>Before you judge me… just click this.</p>
+<p><strong>It's not a virus.</strong> Probably. 😂</p>
+<p class="tiny">Okay, fine. It's just a tiny birthday surprise made especially for you.</p>
+</div>
+<button class="btn" onclick="start()">OPEN YOUR SURPRISE ♡</button>
+</div>
+</section>
+
+<section id="birthday" class="reveal">
+<div class="wrap">
+<div class="paper">
+<div class="sticker">TODAY'S MAIN CHARACTER 🎀</div>
+<h2>HAPPY BIRTHDAY,<br>AZAD! 🎂</h2>
+<p>aka <b>Ezu</b> — because apparently one name wasn't enough.</p>
+<p>Congratulations on surviving another year of being you. 😂❤️</p>
+<div style="font-size:3rem">🎈 🎂 🎈</div>
+<a class="btn" href="#memories">SHOW ME THE EVIDENCE 📸</a>
+</div>
+</div>
+</section>
+
+<section id="memories" class="reveal">
+<div class="wrap">
+<div class="sticker">EVIDENCE OF EZU BEING EZU</div>
+<h2>Our little museum 😂</h2>
+<div class="memories">
+<div class="polaroid">
+<img src="memory-football.jpg" alt="Azad playing football">
+<div class="caption">Exhibit A: Football, dreams & absolutely no intention of coming home early. ⚽😂</div>
+</div>
+<div class="polaroid">
+<img src="memory-us.png" alt="A memory of us">
+<div class="caption">Exhibit B: You + me = chaos with occasional good photography. 👀❤️</div>
+</div>
+</div>
+<div>
+<span class="award">🏆 Professional Trouble Maker</span>
+<span class="award">⚽ Part-time Footballer</span>
+<span class="award">😂 Full-time Ezu</span>
+</div>
+<br><br><a class="btn" href="#quiz">VERY SERIOUS TEST →</a>
+</div>
+</section>
+
+<section id="quiz" class="reveal">
+<div class="wrap">
+<div class="paper quiz">
+<div class="sticker">SCIENTIFIC RESEARCH 🧪</div>
+<h2>How well do you know yourself?</h2>
+<p><b>Question:</b> Who is more annoying?</p>
+<button class="answer" onclick="answer('me')">A) Me 😇</button>
+<button class="answer" onclick="answer('you')">B) Obviously you 🙄</button>
+<button class="answer" onclick="answer('both')">C) Both of us, unfortunately 😂</button>
+<div class="result" id="result"></div>
+<p class="tiny">There is no wrong answer. There are only consequences.</p>
+</div>
+<a class="btn" href="#letter">OKAY, I HAVE A REAL MESSAGE NOW 💌</a>
+</div>
+</section>
+
+<section id="letter" class="reveal">
+<div class="wrap">
+<div class="paper letter">
+<div class="sticker">FROM ME TO YOU</div>
+<h2>Dear Ezu…</h2>
+<p class="type" id="letterText"></p>
+</div>
+<a class="btn" href="#cinema">ONE LAST SURPRISE 🎬</a>
+</div>
+</section>
+
+<section id="cinema" class="cinema reveal">
+<div class="wrap">
+<div class="sticker">EZU CINEMA 🎬</div>
+<h2>Okay Ezu… enough scrolling.</h2>
+<p>You said you didn't need a birthday video.</p>
+<p>So obviously I made you a tiny <b>movie experience</b> instead. 😂</p>
+<div class="video-card">
+<div class="screen"><img id="slideshow" src="memory-us.png" alt="Birthday memory"><div class="play">▶</div></div>
+<p id="slideCaption">Scene 1: the chaos begins…</p>
+<button class="btn" onclick="nextSlide()">NEXT SCENE →</button>
+</div>
+<p class="tiny">A little photo-film made from your memories. More scenes can be added later.</p>
+<a class="btn" href="#final">ROLL THE CREDITS ♡</a>
+</div>
+</section>
+
+<section id="final" class="final reveal">
+<div class="wrap">
+<div class="heart">♡</div>
+<h2>Happy Birthday, Ezu.</h2>
+<p>Keep being exactly the person who makes ordinary days a little more memorable.</p>
+<p>Here's to more laughs, more stupid pictures, more adventures, more arguments about absolutely nothing… and many, many more memories.</p>
+<p><b>Happy birthday, Azad. ❤️</b></p>
+<p class="tiny">Made with love, chaos and a suspicious amount of effort.</p>
+</div>
+</section>
+
+<script>
+const letter=`Happy birthday, Ezu. ❤️
+
+I hope this year gives you a ridiculous amount of happiness, good memories, reasons to laugh, and lots of moments you'll want to remember.
+
+You have this very annoying talent of being able to make an ordinary moment feel special. And somehow, between all the jokes, the random conversations and the little memories, you've become someone I genuinely love having in my life.
+
+So today, I'm wishing you good things — big dreams, peaceful days, exciting adventures, and plenty of reasons to smile.
+
+And yes… you are officially allowed to feel special today.
+
+Don't get too used to it. 😂
+
+Happy birthday, my Azad. ♡`;
+
+function start(){
+ document.querySelectorAll('.reveal').forEach((e,i)=>setTimeout(()=>e.classList.add('on'),i*100));
+ makeConfetti();
+ document.getElementById('birthday').scrollIntoView({behavior:'smooth'});
+ typeLetter();
+}
+function makeConfetti(){
+ const c=document.getElementById('confetti');
+ for(let i=0;i<100;i++){
+  let s=document.createElement('span');s.style.left=Math.random()*100+'%';
+  s.style.background=['#ffabc8','#ffd66b','#b8ddff','#c9efc7','#d8b5ff'][Math.floor(Math.random()*5)];
+  s.style.animationDelay=Math.random()*1.5+'s';c.appendChild(s);
+  setTimeout(()=>s.remove(),6000);
+ }
+}
+let typed=false;
+function typeLetter(){
+ if(typed)return;typed=true;let i=0,e=document.getElementById('letterText');
+ let t=setInterval(()=>{e.textContent+=letter[i++]||'';if(i>=letter.length)clearInterval(t)},16);
+}
+function answer(a){
+ const r=document.getElementById('result');r.style.display='block';
+ r.textContent=a==='me'?'Nice try. You are clearly protecting your reputation. 😂':
+ a==='you'?'Correct. The research department confirms this finding. 🙄😂':
+ 'Finally, someone understands the situation. We are both the problem. 😂❤️';
+}
+const slides=[
+ ['memory-us.png','Scene 1: two people, one camera, zero normal behaviour. 😂'],
+ ['memory-football.jpg','Scene 2: Ezu enters his football era. ⚽'],
+ ['memory-us.png','Scene 3: somehow, this chaos became a memory worth keeping. ❤️']
+];
+let slide=0;
+function nextSlide(){
+ slide=(slide+1)%slides.length;const im=document.getElementById('slideshow');
+ im.style.opacity=0;setTimeout(()=>{im.src=slides[slide][0];document.getElementById('slideCaption').textContent=slides[slide][1];im.style.opacity=1},180);
+}
+</script>
+</body>
+</html>
